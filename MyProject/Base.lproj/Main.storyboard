@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9OF-dv-VPi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9OF-dv-VPi">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Prénoms-->
         <scene sceneID="c1F-dk-XFC">
             <objects>
                 <tableViewController id="HrQ-Ex-lI0" customClass="TableViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="CSm-F7-aNY" kind="show" id="db8-cT-6bJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,11 +36,43 @@
                             <outlet property="delegate" destination="HrQ-Ex-lI0" id="YBs-9h-ReM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eLy-pO-AHO"/>
+                    <navigationItem key="navigationItem" title="Prénoms" id="eLy-pO-AHO">
+                        <barButtonItem key="backBarButtonItem" title="Retour" id="25D-32-6r3"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMP-iP-Nen" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1055.625" y="-127.8169014084507"/>
+        </scene>
+        <!--Name View Controller-->
+        <scene sceneID="xn2-pt-kgD">
+            <objects>
+                <viewController id="CSm-F7-aNY" customClass="NameViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oht-3F-PsR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-U9-qaC">
+                                <rect key="frame" x="139" y="274" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5zd-U9-qaC" firstAttribute="centerY" secondItem="Oht-3F-PsR" secondAttribute="centerY" id="VNM-hp-AF3"/>
+                            <constraint firstItem="5zd-U9-qaC" firstAttribute="centerX" secondItem="Oht-3F-PsR" secondAttribute="centerX" id="XaA-fF-fVX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qym-cq-fZM"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="5zd-U9-qaC" id="Fdf-d6-dUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bI6-p9-wae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021" y="-128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kXL-W6-H9s">

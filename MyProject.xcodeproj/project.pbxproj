@@ -12,6 +12,7 @@
 		BB1201E720AC481500B46960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1201E620AC481500B46960 /* Assets.xcassets */; };
 		BB1201EA20AC481500B46960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1201E820AC481500B46960 /* LaunchScreen.storyboard */; };
 		BB932D1820B5887100FD451A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB932D1720B5887100FD451A /* TableViewController.swift */; };
+		BBB67D0820BEC13E0001418D /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB67D0720BEC13E0001418D /* NameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BB1201E920AC481500B46960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB1201EB20AC481500B46960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB932D1720B5887100FD451A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BBB67D0720BEC13E0001418D /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BB1201E820AC481500B46960 /* LaunchScreen.storyboard */,
 				BB1201EB20AC481500B46960 /* Info.plist */,
 				BB932D1720B5887100FD451A /* TableViewController.swift */,
+				BBB67D0720BEC13E0001418D /* NameViewController.swift */,
 			);
 			path = MyProject;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				BB1201E020AC481400B46960 /* AppDelegate.swift in Sources */,
 				BB932D1820B5887100FD451A /* TableViewController.swift in Sources */,
+				BBB67D0820BEC13E0001418D /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
